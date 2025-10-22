@@ -1,0 +1,88 @@
+body {
+    background-color: var(--neutral-200);
+}
+
+header {
+    background-color: var(--white);
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 8px;
+    
+}
+
+nav ul li {
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--primary);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/* Hero section Design */
+.hero-section {
+    background: url('../IMAGES/HERO/hero-02-2000.webp');
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero {
+    color: var(--neutral-200);
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: var(--text-2xl);
+}
+
+.hero p {
+    margin: 12px 0 30px;
+    font-size: 20px;
+}
+
+.primary-btn {
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    transition: background-color 0.3s ease;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: var(--text-base);
+}
+
+.primary-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+.primary-btn:active {
+    background-color: var(--accent-active);
+}
+

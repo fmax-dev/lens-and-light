@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENS & LIGHT | Home</title>
+    <link rel="stylesheet" href="./CSS/general.css">
+    <link rel="stylesheet" href="./CSS/home.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-area">
+                <h1 class="logo-name">LENS & LIGHT</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero-section">
+            <div class="hero">
+                <h1>Capturing Natural Beauty, One Frame at a Time</h1>
+                <p>Professional portrait photography in natural light</p>
+                <button class="primary-btn" type="submit">View Portfolio</button>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="featured-img">
+                <picture>
+                    <source type="image/webp"
+                    srcset="images/gallery/portrait-01-400.webp 400w, images/gallery/portrait-01-800.webp 800w, images/gallery/portrait-01-1200.webp 1200w"
+                    sizes="(max-width: 600px) 48vw, (max-width:1024px) 31vw, 24vw">
+                    <img
+                        src="images/gallery/portrait-01-800.jpg"
+                        srcset="images/gallery/portrait-01-400.jpg 400w, images/gallery/portrait-01-800.jpg 800w, images/gallery/portrait-01-1200.jpg 1200w"
+                        sizes="(max-width: 600px) 48vw, (max-width:1024px) 31vw, 24vw"
+                        alt="Natural light portrait"
+                        loading="lazy"
+                        width="800"
+                        height="1000"
+                        style="aspect-ratio: 4/5; object-fit: cover;">
+                </picture>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
